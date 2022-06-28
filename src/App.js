@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'; // The App component is teh root of our application, it is the view component that controls our entire app or page
+
+import Products from './Products'; // We import the Products component
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>
+        Learn React Hooks
+        <Products /> {/* We have just referred to another component from a component */}
+      </h1>
     </div>
   );
 }
