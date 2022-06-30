@@ -33,5 +33,11 @@ function App() {
 # Displaying a List
 
 
-# 47 min React
+# 3.1 CSS Class Binding
+
+React-Bootstrap is a library of reusable front-end components that contain JSX based templates to build user interface components.
+
+Installing React-Bootstrap
+
+npm install react-bootstrap bootstrap
 

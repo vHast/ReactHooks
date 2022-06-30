@@ -17,10 +17,12 @@ const user = {
 // User object being declared
 
 function App() {
+
+  
   return (
     <div>
       <h1>
-        Hello {formatName(user)}, welcome to Learn React Hooks {/* Here we have called the previous function and returned the res/ult as a JSX*/}
+        Hello {formatName(user)}, welcome to Learn React Hooks {/* Here we have called the previous function and returned the result as a JSX*/}
         <Products /> {/* We have just referred to another component from a component */}
         <br />
         <img src={user.imageUrl} alt="Profile of the user" />
