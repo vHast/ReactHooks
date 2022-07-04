@@ -1,29 +1,42 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {IoIosStar, IoIosStarOutline } from 'react-icons/io';
 
 function Rating(props) {
+
+  const [rating, setRating] = useState(props.rating); // useState is a hook which we call to add some local state to a component 
+
   return (
     <div>
-      <h1>Rating: {props.rating}</h1>
-      {props.rating >= 1 ? (<IoIosStar/>
+
+      <h1>Rating: {rating}</h1>
+
+      {rating >= 1 ? (<IoIosStar onClick={() => setRating(1)}/>
       ): (
-        <IoIosStarOutline></IoIosStarOutline>
+        <IoIosStarOutline onClick={() => setRating(1)}/>
       )}
-      {props.rating >= 2 ? (<IoIosStar/>
+
+      {/* In each star, we pass in an arrow function as the event handler with rating value to the onClick event
+      
+          So this means if an user clicks on the third star, it will assign the rating to 3, and if it clicks on the fourth star it will assign the rating of four */}
+
+      {rating >= 2 ? (<IoIosStar onClick={() => setRating(2)}/>
       ): (
-        <IoIosStarOutline></IoIosStarOutline>
+        <IoIosStarOutline onClick={() => setRating(2)}/>
       )}
-      {props.rating >= 3 ? (<IoIosStar/>
+
+      {rating >= 3 ? (<IoIosStar onClick={() => setRating(3)}/>
       ): (
-        <IoIosStarOutline></IoIosStarOutline>
+        <IoIosStarOutline onClick={() => setRating(3)}/>
       )}
-      {props.rating >= 4 ? (<IoIosStar/>
+
+      {rating >= 4 ? (<IoIosStar onClick={() => setRating(4)}/>
       ): (
-        <IoIosStarOutline></IoIosStarOutline>
+        <IoIosStarOutline onClick={() => setRating(4)}/>
       )}
-      {props.rating >= 5 ? (<IoIosStar/>
+      
+      {rating >= 5 ? (<IoIosStar onClick={() => setRating(5)}/>
       ): (
-        <IoIosStarOutline></IoIosStarOutline>
+        <IoIosStarOutline onClick={() => setRating(5)}/>
       )}
 
     </div>
