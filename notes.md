@@ -155,5 +155,7 @@ function Rating(props) {
 
 Which consists of 5 if statements in order to create the stars, every time it checks the number it will add either a star or a star outline.
 
+# 3.4 Adding Local State to a Component
+
 
 
