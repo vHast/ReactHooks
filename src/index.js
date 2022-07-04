@@ -10,7 +10,6 @@ const numbers = [1, 2, 3, 4, 5];
 root.render(
   <React.StrictMode>
     <App />
-    <NumberList numbers={numbers} />
   </React.StrictMode>
 );
 
