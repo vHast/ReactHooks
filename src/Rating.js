@@ -6,7 +6,7 @@ function Rating(props) {
   const [rating, setRating] = useState(props.rating); // useState is a hook which we call to add some local state to a component 
 
   return (
-    <div>
+    <div style={styles.starStyle /* Here we are linking the style we desire to include into our JSX component, it's scoped locally */}>
 
       <h1>Rating: {rating}</h1>
 
@@ -39,8 +39,16 @@ function Rating(props) {
         <IoIosStarOutline onClick={() => setRating(5)}/>
       )}
 
+      {props.numOfReviews}
+
     </div>
   )
 }
 
 export default Rating;
+
+const styles ={ // Creation of a React stylesheet
+  starStyle:{
+    color: 'gray'
+  }
+}

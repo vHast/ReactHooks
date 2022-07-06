@@ -3,10 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import NumberList from './ListandKeys';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-const numbers = [1, 2, 3, 4, 5];
 root.render(
   <React.StrictMode>
     <App />
