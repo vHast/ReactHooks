@@ -4,7 +4,10 @@ import {Card} from 'react-bootstrap'
 
 const Product = (props) => {
   return (
+
+
     <div>
+
       <Card>
         <img 
         width= {64}
